@@ -233,8 +233,10 @@ header{
 
 .formulario div:nth-child(9){
     grid-area: check;
+    display: flex;
+    justify-content: space-between;
     justify-self: end;
-    margin: 5px 0 5px;
+    margin: 5px 0 5px 5px;
 }
 .formulario button:nth-child(10){
     grid-area: bttn;
@@ -306,7 +308,7 @@ footer div a i{
     color: #b9b3b3;
 }
 .fa-facebook:hover{
-    color: #3b5998;
+    color: #1778F2;
 }
 .fa-twitter:hover{
     color: #1DA1F2;
