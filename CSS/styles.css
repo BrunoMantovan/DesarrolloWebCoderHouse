@@ -16,7 +16,6 @@ header{
     height: 100px;
 }
 .container-fluid{
-    background: #673AB7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: fixed;
@@ -38,7 +37,7 @@ header{
     border: 2px solid #dbcfcf;
 }
 .navbar-toggler:focus{
-    box-shadow: 0 0 0 2px #c7c173;
+    box-shadow: 0 0 0 2px #dbcfcf;
 }
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28219, 207, 207, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -189,6 +188,9 @@ header{
     font-size: 24px;
     margin-top: 25px;
 }
+.input:focus{
+   outline: none;
+}
 
 .formulario label:nth-child(1){
     grid-area: name-labe;
@@ -247,6 +249,9 @@ header{
     border: none;
     border-radius: 4px;
 }
+.formulario button:hover{
+    box-shadow: 2px 2px black;
+}
 
 /*Nosotros.html*/
 .nosotros-main{
@@ -299,6 +304,22 @@ footer div a{
 footer div a i{
     font-size: 50px;
     color: #b9b3b3;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.fa-instagram:hover{
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+.fa-circle-question:hover{
+    color:#4075e9;
 }
 
 @media(max-width: 1249px){
