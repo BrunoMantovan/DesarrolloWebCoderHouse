@@ -23,11 +23,7 @@ footer{
                 color: $twitter;
             }
             .fa-instagram:hover{
-                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
+                @include gradiant($insta1, $insta2, $insta3, $insta4, $insta5)
             }
             .fa-circle-question:hover{
                 color:$help;

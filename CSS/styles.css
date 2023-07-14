@@ -168,25 +168,46 @@ header .navbar-nav .nav-link:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
-.alien-container img {
+.alien-container .carousel {
   width: 600px;
   height: 400px;
-  border-radius: 6px;
 }
 @media (max-width: 650px) {
-  .alien-container img {
+  .alien-container .carousel {
     width: 450px;
     height: 300px;
   }
 }
 @media (max-width: 500px) {
-  .alien-container img {
+  .alien-container .carousel {
+    width: 300px;
+    height: 200px;
+  }
+}
+.alien-container .carousel img {
+  width: 600px;
+  height: 400px;
+  border-radius: 6px;
+}
+@media (max-width: 650px) {
+  .alien-container .carousel img {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .alien-container .carousel img {
     width: 300px;
     height: 200px;
   }
 }
 .alien-container .descripcion-juego {
   margin-left: 50px;
+}
+@media (max-width: 1249px) {
+  .alien-container .descripcion-juego {
+    margin-left: 0;
+  }
 }
 @media (max-width: 1249px) {
   .alien-container {
@@ -204,6 +225,7 @@ header .navbar-nav .nav-link:hover {
   flex-wrap: wrap;
 }
 .eco-container img {
+  object-fit: cover;
   width: 600px;
   height: 400px;
   border-radius: 6px;
@@ -222,6 +244,11 @@ header .navbar-nav .nav-link:hover {
 }
 .eco-container .descripcion-eco {
   margin-right: 50px;
+}
+@media (max-width: 1249px) {
+  .eco-container .descripcion-eco {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1249px) {
   .eco-container {
