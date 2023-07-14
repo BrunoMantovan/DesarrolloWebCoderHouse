@@ -13,6 +13,68 @@ body {
   background-color: #141313;
 }
 
+.formulario .send-button {
+  grid-area: bttn;
+  padding: 3px;
+  justify-self: end;
+  height: 50px;
+  width: 120px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(62, 52, 117, 0.2941176471);
+  border: none;
+  border-radius: 4px;
+}
+.formulario .send-button:hover {
+  box-shadow: 2px 2px black;
+}
+@media (max-width: 500px) {
+  .formulario .send-button {
+    height: 41px;
+    width: 100px;
+    font-size: 18px;
+  }
+}
+
+.eco-container .descripcion-eco, .alien-container .descripcion-juego {
+  width: 600px;
+  background-color: rgba(62, 52, 117, 0.2941176471);
+  border-radius: 30px;
+  padding-left: 15px;
+}
+.eco-container .descripcion-eco h3, .alien-container .descripcion-juego h3 {
+  text-align: center;
+  color: #f79655;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Aclonica", sans-serif;
+}
+.eco-container .descripcion-eco p, .alien-container .descripcion-juego p {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #a0cf1d;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Bowlby One", cursive;
+}
+@media (max-width: 1249px) {
+  .eco-container .descripcion-eco, .alien-container .descripcion-juego {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .eco-container .descripcion-eco, .alien-container .descripcion-juego {
+    width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .eco-container .descripcion-eco, .alien-container .descripcion-juego {
+    width: 300px;
+  }
+}
+
 header {
   height: 100px;
 }
@@ -75,7 +137,7 @@ header .navbar-nav .nav-link {
 }
 header .navbar-nav .nav-link:hover {
   color: #dbcfcf;
-  text-shadow: 2px 2px rgba(26, 26, 26, 0.897);
+  text-shadow: 2px 2px black;
 }
 @media (max-width: 880px) {
   header {
@@ -124,41 +186,7 @@ header .navbar-nav .nav-link:hover {
   }
 }
 .alien-container .descripcion-juego {
-  width: 600px;
   margin-left: 50px;
-  background-color: rgba(62, 52, 117, 0.2941176471);
-  border-radius: 30px;
-  padding-left: 15px;
-}
-.alien-container .descripcion-juego h3 {
-  color: #f79655;
-  padding: 10px;
-  font-size: 30px;
-  font-family: "Aclonica", sans-serif;
-}
-.alien-container .descripcion-juego p {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #a0cf1d;
-  padding: 5px;
-  font-size: 20px;
-  font-family: "Bowlby One", cursive;
-}
-@media (max-width: 1249px) {
-  .alien-container .descripcion-juego {
-    margin-top: 50px;
-    margin-left: 0px;
-  }
-}
-@media (max-width: 650px) {
-  .alien-container .descripcion-juego {
-    width: 450px;
-  }
-}
-@media (max-width: 500px) {
-  .alien-container .descripcion-juego {
-    width: 300px;
-  }
 }
 @media (max-width: 1249px) {
   .alien-container {
@@ -193,43 +221,7 @@ header .navbar-nav .nav-link:hover {
   }
 }
 .eco-container .descripcion-eco {
-  width: 600px;
   margin-right: 50px;
-  background-color: rgba(62, 52, 117, 0.2941176471);
-  border-radius: 30px;
-  padding-left: 15px;
-}
-.eco-container .descripcion-eco h3 {
-  color: #f79655;
-  padding: 10px;
-  font-size: 30px;
-  font-family: "Aclonica", sans-serif;
-}
-.eco-container .descripcion-eco p {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #a0cf1d;
-  padding: 5px;
-  font-size: 20px;
-  font-family: "Bowlby One", cursive;
-}
-@media (max-width: 1249px) {
-  .eco-container .descripcion-eco {
-    margin-right: 0px;
-    margin-top: 50px;
-    border-radius: 30px;
-    padding-left: 15px;
-  }
-}
-@media (max-width: 650px) {
-  .eco-container .descripcion-eco {
-    width: 450px;
-  }
-}
-@media (max-width: 500px) {
-  .eco-container .descripcion-eco {
-    width: 300px;
-  }
 }
 @media (max-width: 1249px) {
   .eco-container {
@@ -384,35 +376,14 @@ header .navbar-nav .nav-link:hover {
   justify-self: end;
   margin: 5px 0 5px 5px;
 }
+.formulario .terminos > input {
+  margin-left: 5px;
+}
 @media (max-width: 500px) {
   .formulario .terminos {
     margin: 5px 0 5px 0px;
   }
 }
-.formulario .send-button {
-  grid-area: bttn;
-  padding: 3px;
-  justify-self: end;
-  height: 50px;
-  width: 120px;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  color: #fff;
-  background-color: rgba(62, 52, 117, 0.2941176471);
-  border: none;
-  border-radius: 4px;
-}
-.formulario .send-button:hover {
-  box-shadow: 2px 2px black;
-}
-@media (max-width: 500px) {
-  .formulario .send-button {
-    height: 41px;
-    width: 100px;
-    font-size: 18px;
-  }
-}
-
 .nosotros-main {
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -18,8 +18,8 @@
                                 "... ... bttn ..." ;
     }
     .label{
-        background-color: #3e34754b;
-        color: #f5e611;
+        background-color: $button1;
+        color: $enf_color;
         font-size: 30px;
         font-family: Helvetica, sans-serif;
         height: 56px;
@@ -74,29 +74,14 @@
         justify-content: space-between;
         justify-self: end;
         margin: 5px 0 5px 5px;
+        >input{
+            margin-left: 5px;
+        }
         @media(max-width: 500px){
             margin: 5px 0 5px 0px;
         }
     }
     .send-button{
-        grid-area: bttn;
-        padding: 3px;
-        justify-self: end;
-        height: 50px;
-        width: 120px;
-        font-family: Helvetica, sans-serif;
-        font-size: 20px;
-        color: #fff;
-        background-color: #3e34754b;
-        border: none;
-        border-radius: 4px;
-        &:hover{
-            box-shadow: 2px 2px black;
-        }
-        @media(max-width: 500px){
-            height: 41px;
-            width: 100px;
-            font-size: 18px;
-        }
+        @extend %button;
     }
 }

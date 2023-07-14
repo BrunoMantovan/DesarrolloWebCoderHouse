@@ -17,10 +17,10 @@ footer{
                 color: #b9b3b3;
             }
             .fa-facebook:hover{
-                color: #1778F2;
+                color: $facebook;
             }
             .fa-twitter:hover{
-                color: #1DA1F2;
+                color: $twitter;
             }
             .fa-instagram:hover{
                 background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
@@ -30,7 +30,7 @@ footer{
                             -webkit-text-fill-color: transparent;
             }
             .fa-circle-question:hover{
-                color:#4075e9;
+                color:$help;
             }
         }
     }

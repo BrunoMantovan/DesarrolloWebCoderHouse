@@ -16,35 +16,8 @@
         }
     }
     .descripcion-juego{
-        width: 600px;
         margin-left: 50px;
-        background-color: #3e34754b;
-        border-radius: 30px;
-        padding-left: 15px;
-        h3{
-            color: #f79655;
-            padding: 10px;
-            font-size: 30px;
-            font-family: 'Aclonica', sans-serif;;
-        }
-        p{
-            margin-left: 5px;
-            margin-right: 5px;
-            color: #a0cf1d;
-            padding: 5px;
-            font-size: 20px;
-            font-family: 'Bowlby One', cursive;
-        }
-        @media(max-width: 1249px){
-            margin-top: 50px;
-            margin-left: 0px;
-        }
-        @media(max-width: 650px){
-            width: 450px;
-        }
-        @media(max-width: 500px){
-            width: 300px;
-        }
+        @extend %textCard;
     }
     @media(max-width: 1249px){
         display: flex;
@@ -74,37 +47,8 @@
         }
     }
     .descripcion-eco{
-        width: 600px;
         margin-right: 50px;
-        background-color: #3e34754b;
-        border-radius: 30px;
-        padding-left: 15px;
-        h3{
-            color: #f79655;
-            padding: 10px;
-            font-size: 30px;
-            font-family: 'Aclonica', sans-serif;
-        }
-        p{
-            margin-left: 5px;
-            margin-right: 5px;
-            color: #a0cf1d;
-            padding: 5px;
-            font-size: 20px;
-            font-family: 'Bowlby One', cursive;
-        }
-        @media(max-width:1249px){
-            margin-right: 0px;
-            margin-top: 50px;
-            border-radius: 30px;
-            padding-left: 15px;
-        }
-        @media(max-width: 650px){
-            width: 450px;
-        }
-        @media(max-width: 500px){
-            width: 300px;
-        }
+        @extend %textCard;
     }
     @media(max-width: 1249px){
         margin-top: 77px;
@@ -117,5 +61,5 @@
 .enfasis{
     font-style: normal;
     font-size: 25px;
-    color: #f5e611;
+    color: $enf_color;
 }
