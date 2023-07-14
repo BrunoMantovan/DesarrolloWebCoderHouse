@@ -1,0 +1,41 @@
+.nosotros-main{
+    font-family: Arial, Helvetica, sans-serif;
+    h2{
+        font-size: 48px;
+        color: #dbcfcf;
+        margin: 5% 0px 3% 11%;
+        @media(max-width: 880px){
+            margin-left: 0;
+        }
+    }
+    p{
+        font-size: 26px;
+        margin: 3% 5% 30px 5%;
+        color: #f5e611;
+        font-family: 'Aclonica', sans-serif;
+        @media(max-width: 880px){
+            margin: 3% 0% 30px 0%;
+        }
+    }
+    ul .primer{
+        margin-top: 4%;
+    }
+    ul li{
+        margin: 0% 0% 4% 3%;    
+        list-style-type:square;
+        color: #f79655;    
+        font-size: 26px;
+        h3{
+            font-size: 35px;
+            margin-right: 1%;
+            font-family: 'Bowlby One', cursive;
+        }
+        @media(max-width: 880px){
+            list-style-type: none;
+            margin-left: 0;
+        }
+    }
+    @media(max-width: 880px){
+        text-align: center;
+    }
+}

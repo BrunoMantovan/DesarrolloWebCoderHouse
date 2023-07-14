@@ -1,0 +1,36 @@
+.contacto-main{
+    color: #dbcfcf;
+    h2{
+        margin: 5% 0px 3% 11%;
+        font-size: 48px;
+        @media(max-width: 700px){
+            margin-left: 0;
+            text-align: center;
+            font-size: 38px;
+        }
+    }
+    h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .contacto-contenido{
+        margin-top: 30px;
+        .mapa{
+            display: block;
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+            @media(max-width: 1000px){
+                width: 700px;
+                height: 350px;
+            }
+            @media(max-width: 700px){
+                width: 350px;
+                height: 175px;
+            }
+            .form-container h3{
+                margin: 6% 0% 4% 0%;
+            }
+        }
+    }
+}

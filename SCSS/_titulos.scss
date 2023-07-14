@@ -1,0 +1,13 @@
+.titulo-index{
+    margin: 5% 0px 3% 11%;
+    font-size: 48px;
+    color: #dbcfcf;
+    font-family: helvetica Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    @media(max-width: 1249px){
+        text-align: center;
+        margin-left: 0;
+    }
+    @media(max-width: 880px){
+        font-size: 34px;
+    }
+}

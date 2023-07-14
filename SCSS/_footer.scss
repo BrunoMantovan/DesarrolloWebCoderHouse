@@ -1,0 +1,37 @@
+footer{
+    margin-top: 120px;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100px;
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        a{
+            padding-inline: 3%;
+            i{
+                font-size: 50px;
+                color: #b9b3b3;
+            }
+            .fa-facebook:hover{
+                color: #1778F2;
+            }
+            .fa-twitter:hover{
+                color: #1DA1F2;
+            }
+            .fa-instagram:hover{
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+            }
+            .fa-circle-question:hover{
+                color:#4075e9;
+            }
+        }
+    }
+}
