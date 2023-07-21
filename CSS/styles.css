@@ -43,7 +43,7 @@ body {
   border-radius: 30px;
   padding-left: 15px;
 }
-.eco-container .descripcion-eco h3, .alien-container .descripcion-juego h3 {
+.eco-container .descripcion-eco h2, .alien-container .descripcion-juego h2 {
   text-align: center;
   color: #f79655;
   padding: 10px;
@@ -189,6 +189,9 @@ header .navbar-nav .nav-link:hover {
   height: 400px;
   border-radius: 6px;
 }
+.alien-container .carousel img:hover {
+  transform: scale(1.5);
+}
 @media (max-width: 650px) {
   .alien-container .carousel img {
     width: 450px;
@@ -230,6 +233,9 @@ header .navbar-nav .nav-link:hover {
   height: 400px;
   border-radius: 6px;
 }
+.eco-container img:hover {
+  transform: scale(1.5);
+}
 @media (max-width: 650px) {
   .eco-container img {
     width: 450px;
@@ -266,21 +272,40 @@ header .navbar-nav .nav-link:hover {
   color: #f5e611;
 }
 
+.ig2 {
+  width: 600px;
+  height: 400px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .ig2 {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .ig2 {
+    width: 300px;
+    height: 200px;
+  }
+}
+
 .contacto-main {
   color: #dbcfcf;
 }
-.contacto-main h2 {
+.contacto-main h1 {
   margin: 5% 0px 3% 11%;
   font-size: 48px;
 }
 @media (max-width: 700px) {
-  .contacto-main h2 {
+  .contacto-main h1 {
     margin-left: 0;
     text-align: center;
     font-size: 38px;
   }
 }
-.contacto-main h3 {
+.contacto-main h2 {
   font-size: 30px;
   text-align: center;
 }
@@ -414,13 +439,13 @@ header .navbar-nav .nav-link:hover {
 .nosotros-main {
   font-family: Arial, Helvetica, sans-serif;
 }
-.nosotros-main h2 {
+.nosotros-main h1 {
   font-size: 48px;
   color: #dbcfcf;
   margin: 5% 0px 3% 11%;
 }
 @media (max-width: 880px) {
-  .nosotros-main h2 {
+  .nosotros-main h1 {
     margin-left: 0;
   }
 }
