@@ -1,0 +1,34 @@
+.progress_bar{
+    animation-name: backgroundBar;
+    animation-duration: 1.25s;
+    .fill{
+        background-color: #ecd865;
+        width: 0%;
+        height: 100%;
+        animation-name: filling;
+        animation-duration: 1.25s;
+        animation-timing-function: cubic-bezier(.6,-0.05,.96,.41);
+    }
+}
+
+@keyframes backgroundBar {
+    0%{
+        width: 100%;
+        background-color: #00000049;
+        height: 7px;
+    }
+    100%{
+        width: 100%;
+        background-color: #00000049;
+        height: 7px;
+    }
+}
+
+@keyframes filling{
+    0%{
+        width: 0%;
+    }
+    99%{
+        width: 99%;
+    }
+}
