@@ -83,7 +83,7 @@ header .navbar .container-fluid {
   background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
 }
 header .navbar .container-fluid .navbar-brand {
@@ -139,23 +139,30 @@ header .navbar-nav .nav-link:hover {
   color: #dbcfcf;
   text-shadow: 2px 2px black;
 }
-@media (max-width: 880px) {
+@media (max-width: 500px) {
   header {
-    height: 110px;
+    height: 76px;
   }
 }
 
 .progress_bar {
   animation-name: backgroundBar;
-  animation-duration: 1.25s;
+  animation-duration: 2s;
+  position: fixed;
+  top: 93px;
+  z-index: 3;
 }
 .progress_bar .fill {
   background-color: #ecd865;
   width: 0%;
-  height: 100%;
   animation-name: filling;
-  animation-duration: 1.25s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.6, -0.05, 0.96, 0.41);
+}
+@media (max-width: 500px) {
+  .progress_bar {
+    top: 71px;
+  }
 }
 
 @keyframes backgroundBar {
@@ -163,19 +170,27 @@ header .navbar-nav .nav-link:hover {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2862745098);
     height: 7px;
+    @media (max-width: 500px) {
+      width: 5px;
+    }
   }
   100% {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2862745098);
     height: 7px;
+    @media (max-width: 500px) {
+      width: 5px;
+    }
   }
 }
 @keyframes filling {
   0% {
     width: 0%;
+    height: 100%;
   }
   99% {
     width: 99%;
+    height: 100%;
   }
 }
 .titulo-index {

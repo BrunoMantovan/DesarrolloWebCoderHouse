@@ -1,13 +1,18 @@
 .progress_bar{
     animation-name: backgroundBar;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
+    position: fixed;
+    top: 93px;
+    z-index: 3;
     .fill{
         background-color: #ecd865;
         width: 0%;
-        height: 100%;
         animation-name: filling;
-        animation-duration: 1.25s;
+        animation-duration: 2s;
         animation-timing-function: cubic-bezier(.6,-0.05,.96,.41);
+    }
+    @media(max-width: 500px){
+        top: 71px;
     }
 }
 
@@ -16,19 +21,27 @@
         width: 100%;
         background-color: #00000049;
         height: 7px;
+        @media (max-width:500px) {
+            width: 5px;
+        }
     }
     100%{
         width: 100%;
         background-color: #00000049;
         height: 7px;
+        @media (max-width:500px) {
+            width: 5px;
+        }
     }
 }
 
 @keyframes filling{
     0%{
         width: 0%;
+        height: 100%;
     }
     99%{
         width: 99%;
+        height: 100%;
     }
 }

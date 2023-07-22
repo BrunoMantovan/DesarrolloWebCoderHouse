@@ -5,7 +5,7 @@ header{
         background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         position: fixed;
         top: 0;
-        z-index: 10;
+        z-index: 2;
         width: 100%;
         .navbar-brand{
             font-family: Carter One;
@@ -53,7 +53,7 @@ header{
             }
         }
     }
-    @media(max-width: 880px){
-            height: 110px;
+    @media(max-width: 500px){
+            height: 76px;
         }
 }
