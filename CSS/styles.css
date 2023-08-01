@@ -25,6 +25,7 @@ body {
   background-color: rgba(62, 52, 117, 0.2941176471);
   border: none;
   border-radius: 4px;
+  transition: 0.3s;
 }
 .formulario .send-button:hover {
   box-shadow: 2px 2px black;
@@ -129,6 +130,7 @@ header .navbar-nav .inicio {
 header .navbar-nav .nav-link {
   color: #dbcfcf;
   font-size: 35px;
+  transition: all 0.4s;
 }
 @media (max-width: 500px) {
   header .navbar-nav .nav-link {
@@ -236,6 +238,7 @@ header .navbar-nav .nav-link:hover {
   width: 600px;
   height: 400px;
   border-radius: 6px;
+  transition: 0.4s;
 }
 .alien-container .carousel img:hover {
   transform: scale(1.5);
@@ -280,6 +283,7 @@ header .navbar-nav .nav-link:hover {
   width: 600px;
   height: 400px;
   border-radius: 6px;
+  transition: 0.4s;
 }
 .eco-container img:hover {
   transform: scale(1.5);
@@ -474,14 +478,20 @@ header .navbar-nav .nav-link:hover {
   display: flex;
   justify-content: space-between;
   justify-self: end;
-  margin: 5px 0 5px 5px;
+  margin: 5px 0 5px 30px;
 }
 .formulario .terminos > input {
   margin-left: 5px;
 }
+@media (max-width: 1000px) {
+  .formulario .terminos {
+    margin: 5px 0 5px 5px;
+  }
+}
 @media (max-width: 500px) {
   .formulario .terminos {
     margin: 5px 0 5px 0px;
+    font-size: 14px;
   }
 }
 .nosotros-main {

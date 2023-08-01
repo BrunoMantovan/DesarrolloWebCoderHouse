@@ -23,10 +23,10 @@ footer{
                 color: $twitter;
             }
             .fa-instagram:hover{
-                @include gradiant($insta1, $insta2, $insta3, $insta4, $insta5)
+                @include gradiant($insta1, $insta2, $insta3, $insta4, $insta5);
             }
             .fa-circle-question:hover{
-                color:$help;
+                color: $help;
             }
         }
     }

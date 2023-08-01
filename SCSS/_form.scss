@@ -73,12 +73,16 @@
         display: flex;
         justify-content: space-between;
         justify-self: end;
-        margin: 5px 0 5px 5px;
+        margin: 5px 0 5px 30px;
         >input{
             margin-left: 5px;
         }
+        @media (max-width: 1000px) {
+            margin: 5px 0 5px 5px;
+        }
         @media(max-width: 500px){
             margin: 5px 0 5px 0px;
+            font-size: 14px;
         }
     }
     .send-button{
