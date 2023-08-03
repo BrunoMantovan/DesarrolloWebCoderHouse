@@ -35,24 +35,16 @@ header{
         @media(max-width: 990px){
                 align-items: end;
         }
-        .inicio{
-            font-size: 40px;
-            @media(max-width: 500px){
-                font-size: 30px;
-            }
-        }
         .nav-link{
             color: $main_color;
-            font-size: 35px;
-            transition: all .4s;
-            @media(max-width: 500px){
-                font-size: 25px;
-            }
+            font-size: 26px;
+            transition: all .3s;
             &:hover{
                 color: $main_color;
-                text-shadow: 2px 2px $shadow;
+                text-shadow: 1.8px 1.8px $shadow;
             }
         }
+        
     }
     @media(max-width: 500px){
             height: 76px;

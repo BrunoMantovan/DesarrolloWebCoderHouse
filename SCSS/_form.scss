@@ -1,91 +1,99 @@
-.formulario{
-    display: grid;
-    grid-template-columns: 20fr 35fr 55fr;
-    grid-template-areas:"label1 input1    none"
-                        "label2 input2    none"
-                        "label3 input3    none"
-                        "label4 txt-txtar none"
-                        "check     check     none"
-                        "... bttn ..." ;
-    @media(max-width: 1000px){
-            display: grid;
-            grid-template-columns: 23fr 20fr 35fr 23fr;
-            grid-template-areas:"... label1 input1    none"
-                                "... label2 input2    none"
-                                "... label3 input3    none"
-                                "... label4 txt-txtar none"
-                                "... check     check     none"
-                                "... ... bttn ..." ;
-    }
-    .label{
-        background-color: $button1;
-        color: $enf_color;
-        font-size: 30px;
-        font-family: Helvetica, sans-serif;
-        height: 56px;
-        width: 179px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-        @media(max-width: 500px){
-            font-size: 22px;
-            height: 40px;
-            width: 130px;
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .formulario{
+        display: grid;
+        width: 900px;
+        background-color: $card_back;
+        border-radius: 10px;
+        row-gap: 25px;
+        padding: 25px 40px 25px;
+        grid-template-columns: 1fr 2fr ;
+        grid-template-areas:"label1 input1"
+                            "label2 input2"
+                            "label3 input3"
+                            "label4 txt-txtar"
+                            "...    check"
+                            "...    bttn" ;
+        @media (max-width: 1050px) {
+            width: 690px;
         }
-    }
-    .input{
-        font-size: 24px;
-        margin-top: 25px;
-        &:focus{
-            outline: none;
-         }
-        @media(max-width: 500px){
+        @media (max-width: 700px) {
+            width: 500px;
+            grid-template-columns: 1fr 3fr ;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+            border-radius: 0px;
+            padding-right: 5%;
+            padding-left: 2%;
+        }
+        .label{
+            color: $label_color;
+            font-size: 30px;
+            font-family: Helvetica, sans-serif;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px 0 0;
+            @media (max-width: 700px) {
+                font-size: 20px;
+            }
+            @media(max-width: 500px){
+                font-size: 22px;
+                height: 40px;
+            }
+        }
+        .input{
+            font-size: 24px;
+            
+            &:focus{
+                outline: none;
+             }
+             @media (max-width: 700px) {
+                font-size: 18px;
+            }
+        }
+        @for $i from 1 to 5{
+            .label#{$i}{
+                grid-area: label#{$i};
+                padding: 3px;
+                justify-self: center;
+            }
+        }
+        @for $i from 1 to 4{
+            .input#{$i}{
+                grid-area: input#{$i};
+                padding: 3px;
+            }
+        }
+        
+        .area-texto{
+            grid-area: txt-txtar;
+            padding: 3px;
             font-size: 18px;
+            height: 178px;
+            @media (max-width: 700px) {
+                font-size: 14px;
+            }
         }
-    }
-    @for $i from 1 to 5{
-        .label#{$i}{
-            grid-area: label#{$i};
-            padding: 3px;
-            justify-self: center;
+        .terminos{
+            grid-area: check;
+            display: flex;
+            justify-content: space-between;
+            justify-self: end;
+            >input{
+                margin-left: 5px;
+            }
+            @media (max-width: 700px) {
+                font-size: 14px;
+            }
         }
-    }
-    @for $i from 1 to 4{
-        .input#{$i}{
-            grid-area: input#{$i};
-            padding: 3px;
+        .send-button{
+            @extend %button;
         }
     }
     
-    .area-texto{
-        grid-area: txt-txtar;
-        padding: 3px;
-        font-size: 18px;
-        height: 178px;
-        @media(max-width: 500px){
-            font-size: 14px;
-            height: 178px;
-        }
-    }
-    .terminos{
-        grid-area: check;
-        display: flex;
-        justify-content: space-between;
-        justify-self: end;
-        margin: 5px 0 5px 30px;
-        >input{
-            margin-left: 5px;
-        }
-        @media (max-width: 1000px) {
-            margin: 5px 0 5px 5px;
-        }
-        @media(max-width: 500px){
-            margin: 5px 0 5px 0px;
-            font-size: 14px;
-        }
-    }
-    .send-button{
-        @extend %button;
-    }
 }

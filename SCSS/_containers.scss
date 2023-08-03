@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     .carousel{
         width: 600px;
-        height: 400px;
+        height: 460.5px;
         @media(max-width: 650px){
             width: 450px;
             height: 300px;
@@ -15,7 +15,7 @@
         }
         img{
             width: 600px;
-            height: 400px;
+            height: 460.5px;
             border-radius: 6px;
             transition: .4s;
             &:hover{
@@ -57,7 +57,7 @@
     img{
         object-fit: cover;
         width: 600px;
-        height: 400px;
+        height: 460.5px;
         border-radius: 6px;
         transition: .4s;
         &:hover{
@@ -94,7 +94,7 @@
 }
 .ig2{
     width: 600px;
-    height: 400px;
+    height: 460.5px;
     border-radius: 6px;
     overflow: hidden;
     @media(max-width: 650px){
