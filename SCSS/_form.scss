@@ -48,9 +48,14 @@
         }
         .input{
             font-size: 24px;
-            
+            background: transparent;
+            border-style: none;
+            border-bottom: 2px #767676 solid;
+            border-right: 2px #767676 solid;
+            color: #eff3f2;
             &:focus{
                 outline: none;
+                border: solid 2px #767676;
              }
              @media (max-width: 700px) {
                 font-size: 18px;
