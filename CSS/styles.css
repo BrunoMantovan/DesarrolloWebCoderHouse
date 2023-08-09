@@ -580,14 +580,14 @@ footer {
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 130px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media (max-width: 410px) {
   footer {
-    height: 145px;
+    height: 120px;
   }
 }
 footer .footCont {
@@ -596,7 +596,7 @@ footer .footCont {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 410px) {
+@media (max-width: 808px) {
   footer .footCont {
     margin-top: 10px;
   }
