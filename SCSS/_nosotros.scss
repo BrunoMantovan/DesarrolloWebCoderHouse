@@ -13,15 +13,13 @@
         margin: 3% 5% 30px 5%;
         color: $enf_color;
         font-family: 'Aclonica', sans-serif;
-        @media(max-width: 880px){
-            margin: 3% 0% 30px 0%;
-        }
+        
     }
     ul .primer{
         margin-top: 4%;
     }
     ul li{
-        margin: 0% 0% 4% 3%;    
+        margin: 0% 3% 4% 3%;    
         list-style-type:square;
         color: #f79655;    
         font-size: 26px;
